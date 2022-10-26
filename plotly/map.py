@@ -6,15 +6,10 @@ df = pd.read_excel(
 )
 
 y = 1
-print("test")
-print(df.iat[3, y])
-print(df.iat[4, y])
-print(df.iat[4, (y + 1)])
 yearLocation = []
 while df["value"].tolist():
     if y >= len(df.index):
         break
-    print(df.iat[y, 3])
     if df.iat[y, 3] == 2003:
         yearLocation.append(y)
     y += 1
@@ -26,8 +21,6 @@ while yearLocation:
         break
     dfdata.append(df.iat[yearLocation[yy], 4])
     yy += 1
-print(y)
-print(dfdata)
 fig = go.Figure(
     data=go.Choropleth(
         locations=df["ISO_3_codes"],  # iso code country names
