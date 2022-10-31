@@ -8,10 +8,12 @@ df = pd.read_excel(
     #"/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/fixednamesdata/Annual Petroleum and other Liquids Production/Annual Petroleum and other Liquids Production - Crude Oil(Mbd).xlsx"
     # "/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/processed Annual crude and lease condensate exports.xlsx"
     #"/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/processed Annual crude and lease condensate imports.xlsx"
-    "/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/fixednamesdata/Annual Petroleum and other Liquids Production/output/Annual Petroleum and other Liquids Production - Crude Oil(Mbd).xlsx"
+    "~/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/fixednamesdata/Annual Petroleum and other Liquids Production/Annual Petroleum and other Liquids Production - Crude Oil(Mbd).xlsx" 
 )
 
-colorscale = [[0, "gray"], [0.01, "gray"], [0.01, "blue"], [1, "red"]]
+
+
+colorscale = [[0, "gray"], [0.01, "gray"], [0.01, "cyan"], [0.3, "blue"], [1, "red"]]
 
 fig = px.choropleth(
     df,
@@ -26,7 +28,7 @@ fig = px.choropleth(
 fig.update_geos(showcountries=True, countrycolor="Black")
 
 fig.update_layout(
-    title_text="Global crude oil production by year",
+    title_text="Global refined petroleum produce by year",
     geo_scope="world",  # limite map scope to USA
 )
 
