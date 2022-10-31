@@ -7,7 +7,8 @@ print("starting...")
 df = pd.read_excel(
     #"/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/fixednamesdata/Annual Petroleum and other Liquids Production/Annual Petroleum and other Liquids Production - Crude Oil(Mbd).xlsx"
     # "/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/processed Annual crude and lease condensate exports.xlsx"
-    "/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/processed Annual crude and lease condensate imports.xlsx"
+    #"/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/processed Annual crude and lease condensate imports.xlsx"
+    "/home/andrew/repo-projects/projects/bigdata-oil-project/plotly/cleaned data/oil/fixednamesdata/Annual Petroleum and other Liquids Production/output/Annual Petroleum and other Liquids Production - Crude Oil(Mbd).xlsx"
 )
 
 colorscale = [[0, "gray"], [0.01, "gray"], [0.01, "blue"], [1, "red"]]
